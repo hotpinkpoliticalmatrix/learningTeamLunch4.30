@@ -20,19 +20,8 @@ router.get("/", async (req, res, next) => {
 });
 
 //GET a specific Dinosaur
-router.get("/:id", async (req, res, next) => {
-  try {
-    const id = req.params.id;
-    const dino = await Dino.findByPk(id);
-    if (dino) {
-      res.status(200).send(dino);
-    } else {
-      res.send("not found").status(404);
-    }
-  } catch (err) {
-    next(err);
-  }
-});
+
+//Create (POST) new dinosaur
 
 //export our router
 module.exports = router;
