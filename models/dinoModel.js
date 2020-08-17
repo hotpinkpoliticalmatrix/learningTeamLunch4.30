@@ -4,19 +4,19 @@ const db = require("./database");
 
 //declare our model and list our attributes
 const Dino = db.define("dino", {
-  name: {
-    type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    },
-  },
-  species: {
-    type: Sequelize.STRING,
-  },
-  age: {
-    type: Sequelize.INTEGER,
-  },
+  // name: {
+  //   type: Sequelize.STRING,
+  //   allowNull: false,
+  //   validate: {
+  //     notEmpty: true,
+  //   },
+  // },
+  // species: {
+  //   type: Sequelize.STRING,
+  // },
+  // age: {
+  //   type: Sequelize.INTEGER,
+  // },
 });
 
 //export our model
